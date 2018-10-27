@@ -4,7 +4,7 @@ almost ;)
 
 Monitor your PRESENT the bttf-style.
 
-<img src="./Version1.0.1.screenshot.png" />
+<img src="Version1.0.1.screenshot.png">
 
 Display-fields:
 _________________
