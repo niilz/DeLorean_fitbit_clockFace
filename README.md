@@ -1,5 +1,5 @@
-#H1 DeLorean
-#H3 a Back-to-future clock-face for fitbit Versa
+# DeLorean
+### a Back-to-future clock-face for fitbit Versa
 
 Oh là là?! ... a Time Machine?!
 
