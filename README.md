@@ -1,5 +1,5 @@
 # DeLorean
-### a Back-to-future clock-face for fitbit Versa
+### a Back-to-the-Future clock-face for fitbit Versa
 
 Oh là là?! ... a Time Machine?!
 
@@ -33,5 +33,5 @@ Display-fields:
 ---
 The clockface is currently in the review-process at fitbit.
 Once it is clreared it will be available completely free of charge.
-If you would like to try it out already you could use this link: https://gam.fitbit.com/gallery/clock/d6e1a1e6-5b86-4e83-b806-c928c7b75f61
+If you would like to try it out already you could use this link:... [get the DeLorean-Clock-Face link](https://gam.fitbit.com/gallery/clock/d6e1a1e6-5b86-4e83-b806-c928c7b75f61)...
 (needs to be clicked from a mobile device, because it redirects to the fitbit app)
