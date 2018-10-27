@@ -3,9 +3,8 @@ Oh là là?! ... a Time Machine?!
 almost ;)
 
 Monitor your PRESENT the bttf-style.
-<p align="left">
-<img src="version101.screenshot.png" alt="DeLorean-clockface">
-</p>
+
+<img src="version101/screenshot.png" alt="DeLorean-clockface">
 
 Display-fields:
 _________________
