@@ -32,10 +32,10 @@ clock.ontick = () => {
   
   // get data for date (panel 1)
   const month = [now.getMonth()]; // month will just be text
-  const day = util.zeroPad(now.getDate(), 2).split('');
+  const day = util.zeroPadAndSplit(now.getDate(), 2);
   const year = now.getFullYear().toString().split(''); // year needs no Zero-Padding
-  const hour = util.zeroPad(now.getHours(), 2).split('');
-  const min = util.zeroPad(now.getMinutes(), 2).split('');
+  const hour = util.zeroPadAndSplit(now.getHours(), 2);
+  const min = util.zeroPadAndSplit(now.getMinutes(), 2);
  // let sec = util.zeroPad(today.getSeconds()).split('');
   
   // display date-data
@@ -47,7 +47,9 @@ clock.ontick = () => {
   //ddDigits(SEC, sec);
   
   // update steps this hour
-  if (now.getMinutes() === 0) stepsThisHour = 0;
+  if (now.getMinutes() === 0) {
+    stepsOffset = today.adjusted.steps;
+  }
   stepsThisHour = today.adjusted.steps - stepsOffset;
 }
 
@@ -69,15 +71,15 @@ const HEART = getEls("heart", 3);
 function displayActivity() {
   // get activity-data (panel 2)
   const activities = today.local;
-  const cals = util.zeroPad(activities.calories, 5).split('');
-  const floors = util.zeroPad(activities.elevationGain, 4).split('');
-  const steps = util.zeroPad(today.adjusted.steps, 5).split('');
+  const cals = util.zeroPadAndSplit(activities.calories, 5);
+  const floors = util.zeroPadAndSplit(activities.elevationGain, 4);
+  const steps = util.zeroPadAndSplit(today.adjusted.steps, 5);
   
   // get stats-data (panel 3) (apart from heartRate)
-  const hourSteps = util.zeroPad(stepsThisHour, 3).split('');
-  const bat = util.zeroPad(Math.floor(battery.chargeLevel), 2).split(''); // cannot be called battery
+  const hourSteps = util.zeroPadAndSplit(stepsThisHour, 3);
+  const bat = util.zeroPadAndSplit(Math.floor(battery.chargeLevel), 2); // cannot be called battery
   const distanceInMeters = activities.distance;
-  const distance = util.zeroPad(Math.floor(distanceInMeters / 100), 3).split('');
+  const distance = util.zeroPadAndSplit(Math.floor(distanceInMeters / 100), 3);
   
   // display activity-data (panel 2)
   addDigits(CAL, cals);
@@ -96,7 +98,7 @@ const heartRate = "000";
 const hr = new HeartRateSensor();
 hr.onreading = () => {
   // get heartRate on change of heartRate
-  heartRate = util.zeroPad(hr.heartRate, 3).split('');
+  heartRate = util.zeroPadAndSplit(hr.heartRate, 3);
   // render the HeartRate (seperate from the other numbers)
   addDigits(HEART, heartRate);
 }
