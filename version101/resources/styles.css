@@ -1,0 +1,107 @@
+.background {
+  viewport-fill: black;
+}
+
+.container {
+  width: 300;
+  height: 96;
+  gradient-type: linear;
+  gradient-x1: 100;
+  gradient-y1: 50;
+  gradient-x2: 250;
+  gradient-y2: 100;
+  gradient-color1: "rgb(85,85,85)";
+  gradient-color2: "rgb(50,50,50)"
+}
+
+.titleBox {
+  y: 15;
+  height: 13;
+  fill: "rgb(60, 0, 0)";   
+}
+
+.title {
+  y: 26;
+  font-size: 12;
+  font-family: "Fabrikat-Bold";
+  fill: "rgb(200, 200, 200)";
+}
+
+.rect {
+  y: 33;
+  height: 40;
+  gradient-type: bilinear;
+  gradient-x1: 0;
+  gradient-y1: 0;
+  gradient-x2: 3;
+  gradient-y2: 3;
+  gradient-color1: "rgb(0, 0, 0)";
+  gradient-color2: "rgb(0, 0, 0)";
+  gradient-color3: "rgb(0, 0, 0)";
+  gradient-color4: "rgb(40, 15, 15)";
+}
+
+.off {
+  fill: "rgb(80, 0, 0)";
+  opacity: 0.2;
+}
+
+.date {
+  y: 36;
+  width: 17;
+  height: 33;
+  fill: "rgb(200, 20, 20)";
+}
+
+.light {
+  r: 2;
+  fill: yellow;
+}
+
+
+/* second container */
+
+.titleBox2 {
+  y: 115;
+  height: 13;
+  fill: "rgb(60, 0, 0)";   
+}
+
+.title2 {
+  y: 126;
+  font-size: 12;
+  font-family: "Fabrikat-Bold";
+  fill: "rgb(200, 200, 200)";
+}
+
+
+.activity {
+  y: 136;
+  width: 17;
+  height: 33;
+  fill: "rgb(20, 200, 20)";
+}
+
+
+/* third container */
+
+.titleBox3 {
+  y: 213;
+  height: 13;
+  fill: "rgb(60, 0, 0)";   
+}
+
+.title3 {
+  y: 224;
+  font-size: 12;
+  font-family: "Fabrikat-Bold";
+  fill: "rgb(200, 200, 200)";
+}
+
+
+.stats {
+  y: 234;
+  width: 17;
+  height: 33;
+  fill: "rgb(200, 185, 20)";
+}
